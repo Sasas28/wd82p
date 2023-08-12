@@ -28,22 +28,22 @@ body {
 .menu-items {
   color: #e0e0e0;
   list-style-type: none;
-
   display: flex;
   gap: 1em;
 }
 
 .hero-container {
   margin: 4em 0;
-
   display: flex;
-  gap: 1em;
+  justify-content: space-around;
 }
 
 .hero-details {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  justify-content: center;
+  width: 400px;
 }
 
 .hero-details-info {
@@ -62,21 +62,21 @@ body {
 }
 
 .main-container {
-  padding: 1em 8em;
+  margin: 4em 8em;
 }
 
 .main-title {
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .main-items {
   display: flex;
-  justify-content: space-around;
-  margin: 2em 0 5em 0;
+  justify-content: space-evenly;
 }
 
 .main-item {
-  text-align: center;
+  text-align: justify;
   width: 100px;
 }
 
