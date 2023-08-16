@@ -1,0 +1,152 @@
+.borderB {
+    border: 1px solid black;
+}
+
+.borderW {
+    border: 1px solid white;
+}
+
+.borderR {
+    border: 1px solid red;
+}
+
+.borderG {
+    border: 1px solid gray;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #151515;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+  }
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-container {
+    width: 50%;
+}
+  
+.hero-img-container img {
+    width: 100%;
+}
+
+.hero-content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+  
+h2 span {
+    border-bottom: 4px solid #64daa6;
+}
+
+.hero-content p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.hero-content a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #64daa6;
+    font-weight: bold;
+}
+
+hr {
+    margin: 3em 1em;
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2em;
+      }
+
+    .nav-menu {
+        gap: 1.5em;
+    }
+
+    .hero {
+        flex-direction: row;
+        padding: 2em;
+    }
+
+    .hero-img-container {
+        flex: 1;
+        order: 1;
+    }
+
+    .hero-content {
+        align-items: flex-start;
+        gap: 4em;
+        flex: 2;
+      }
+
+    h2 {
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        text-align: left;
+        font-size: 1em;
+    }
+
+    .hero-content a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: 4em;
+    }
+
+    .hero-content p {
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .hero-content a {
+        font-size: 2em;
+    }
+}
